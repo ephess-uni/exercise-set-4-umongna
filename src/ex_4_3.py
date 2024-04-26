@@ -23,7 +23,7 @@ def time_between_shutdowns(logfile):
     initial_shutdown = logstamp_to_datetime(shutdownlist[0].split(" ")[1])
     last_shutdown = logstamp_to_datetime(shutdownlist[-1].split(" ")[1])
     time_diff = (last_shutdown - initial_shutdown)
-    retun time_diff
+    return time_diff
 
 
 # >>>> The code below will call your function and print the results
